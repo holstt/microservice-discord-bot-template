@@ -1,7 +1,7 @@
 # DiscordBot
 All-around Discord bot written in C# using Discord.NET (new repo) 
 
-# About
+## About
 
 The internal architecture is based on the MVC-pattern following the principles from Domain-Driven Design (DDD). 
 
@@ -20,7 +20,7 @@ A brief overview of the layers:
 > TODO: 
 > - Insert architecture illustration.
 
-# Getting Started
+## Getting Started
 
 It is possible to run the application independently of the other services in the microservice architecture (except the postgres database), however, only limited functionality will be available. 
 
@@ -32,7 +32,7 @@ Either run the project natively or use the provided Dockerfile.
 > - Link to docker-compose.yml 
  
 
-# Usage 
+## Usage 
 
 > TODO:
 > - Insert screenshot, demo gif, code examples... 
