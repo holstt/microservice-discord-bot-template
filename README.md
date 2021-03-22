@@ -17,7 +17,8 @@ A brief overview of the layers:
 
 **Infrastructure**: Data persistence and external web services. 
 
-> TODO: Insert architecture illustration.
+> TODO: 
+> - Insert architecture illustration.
 
 # Getting Started
 
