@@ -30,6 +30,7 @@ Either run the project natively or use the provided Dockerfile.
 > - Setting own config/env values.
 > - Link to other project dependencies. 
 > - Link to docker-compose.yml 
+> - Native + Docker command
  
 
 ## Usage 
