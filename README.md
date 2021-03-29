@@ -1,4 +1,6 @@
 # DiscordBot
+![discord-net](https://img.shields.io/badge/discord--net-v2.2.0-blue)
+
 All-around Discord bot written in C# using Discord.NET (new repo) 
 
 ## About
