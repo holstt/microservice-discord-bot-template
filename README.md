@@ -40,3 +40,11 @@ Either run the project natively or use the provided Dockerfile.
 > TODO:
 > - Insert screenshot, demo gif, code examples... 
 
+## Project TODO
+- [ ] Push code to repo
+- [ ] Refactor
+- [ ] Migrate to .NET 5
+
+
+
+
