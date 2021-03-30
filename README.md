@@ -43,6 +43,7 @@ Either run the project natively or use the provided Dockerfile.
 ## Project TODO
 - [ ] Push code to repo
 - [ ] Refactor
+- [ ] Migrate to latest Discord.NET package
 - [ ] Migrate to .NET 5
 
 
