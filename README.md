@@ -1,4 +1,4 @@
-# DiscordBot
+# Discord Bot
 ![discord-net](https://img.shields.io/badge/discord--net-v2.2.0-blue)
 
 All-around Discord bot written in C# using Discord.NET (new repo) 
@@ -38,6 +38,8 @@ Either run the project natively or use the provided Dockerfile.
 ## Usage 
 
 > TODO:
+> - Overview of all commands with link to example section
+> - Example of all commands
 > - Insert screenshot, demo gif, code examples... 
 
 ## Project TODO
