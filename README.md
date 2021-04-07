@@ -5,9 +5,16 @@ All-around Discord bot written in C# using Discord.NET (new repo)
 
 ## About
 
-The internal architecture is based on the MVC-pattern following the principles from Domain-Driven Design (DDD). 
+The Discord bot is part of a [microservice architecture](https://github.com/roedebaron/discordbot-microservice-architecture) managed by Docker Compose and depends on multiple other services in order to execute its' functionality - please see my other projects: 
 
-The Discord bot is part of a microservice architecture managed by Docker Compose and depends on multiple other services in order to execute its' functionality - please see my other projects. 
+- [image-caption-ai](https://github.com/roedebaron/image-caption-ai)
+- [aau-schedule-scraping](https://github.com/roedebaron/aau-schedule-scraping)
+- [google-drive-service](https://github.com/roedebaron/google-drive-service)
+- [corona-stats](https://github.com/roedebaron/corona-stats)
+- [reddit-service](https://github.com/roedebaron/reddit-service)
+- [chart-service](https://github.com/roedebaron/chart-service)
+
+The internal architecture is based on the MVC-pattern following the principles from Domain-Driven Design (DDD). 
 
 A brief overview of the layers: 
 
