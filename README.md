@@ -1,5 +1,7 @@
 # Discord Bot
 ![discord-net](https://img.shields.io/badge/discord--net-v2.2.0-blue)
+![csharp](https://img.shields.io/badge/C%23-8.0-blue)
+![ide](https://img.shields.io/badge/IDE-vs2019-blue)
 
 All-around Discord bot written in C# using Discord.NET (new repo) 
 
@@ -84,7 +86,7 @@ First, set up a postgres database for your platform. Then run the following comm
 - [ ] Push code to repo
 - [ ] Refactor
 - [ ] Migrate to latest Discord.NET package
-- [ ] Migrate to .NET 5
+- [ ] Migrate to .NET 5/C#9
 
 
 
