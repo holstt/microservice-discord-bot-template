@@ -20,7 +20,7 @@ A brief overview of the layers:
 
 **Core**: Business logic. Represents domain objects and services. 
 
-**View**: Represents the Discord messages to be returned to a Discord guild i.e. a "View" is simply a formatted string to be interpreted by the Discord client. 
+**View**: Represents the Discord messages to be returned to a Discord guild i.e. a "View" is simply a formatted string to be interpreted by the Discord UI client. 
 
 **Controller**: Recieves incoming Discord commands which are then delegated to **Core**. The result from Core is represented as a Discord message (a View) and returned to the client.  
 
@@ -33,7 +33,38 @@ A brief overview of the layers:
 
 It is possible to run the application independently of the other services in the microservice architecture (except the postgres database), however, only limited functionality will be available. 
 
-Either run the project natively or use the provided Dockerfile.
+### Configuration
+
+#### Bot
+
+I will recommend to create two bots on Discord - one for development and one for production. The development bot should only have access to discord servers created for testing.
+
+Place the production bot token in `appsettings.Production.json` and the development bot token in `appsettings.Development.json`
+
+#### Other
+
+Change the logging configuration defined in `appsettings.json` if necessary.  
+
+### Running the bot
+
+Either run the project natively or use the provided `docker-compose.yml` to run it in Docker using the Docker Compose tool.
+
+#### Native
+
+First, set up a postgres database for your platform. Then run the following commands: 
+
+1. `git clone https://github.com/roedebaron/discord-bot.git`
+2. `cd discord-bot/DiscordBot.Api`
+3. Start up the postgres database and make sure it is ready
+4. Run `dotnet run` to download dependencies, build and run the service. 
+5. If no other port has been specified in the configuration, the service is now running on port 5000. 
+
+#### Using Docker 🐳
+1. `git clone https://github.com/roedebaron/discord-bot.git`
+2. `cd discord-bot/DiscordBot.Api`
+3. Run `docker-compose up` to build the images and run the containers in attached mode
+4. If no other port has been specified in the configuration, the service is now running on port 5000. 
+
 
 > TODO: 
 > - Setting own config/env values.
