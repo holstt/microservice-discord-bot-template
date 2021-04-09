@@ -51,19 +51,19 @@ Change the logging configuration defined in `appsettings.json` if necessary.
 
 Either run the project natively or use the provided `docker-compose.yml` to run it in Docker using the Docker Compose tool.
 
+Clone the project: 
+1. `git clone https://github.com/roedebaron/discord-bot.git`
+2. `cd discord-bot/DiscordBot.Api`
+
 #### Native
 
 First, set up a postgres database for your platform. Then run the following commands: 
 
-1. `git clone https://github.com/roedebaron/discord-bot.git`
-2. `cd discord-bot/DiscordBot.Api`
 3. Start up the postgres database and make sure it is ready
-4. Run `dotnet run` to download dependencies, build and run the service. 
+4. Run `dotnet run`. This will automatically download all dependencies, build the project and then run the service.  
 5. If no other port has been specified in the configuration, the service is now running on port 5000. 
 
 #### Using Docker 🐳
-1. `git clone https://github.com/roedebaron/discord-bot.git`
-2. `cd discord-bot/DiscordBot.Api`
 3. Run `docker-compose up` to build the images and run the containers in attached mode
 4. If no other port has been specified in the configuration, the service is now running on port 5000. 
 
