@@ -11,12 +11,6 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/discord--net-v2.2.0-blue" alt="discord-net" style="max-width:100%;">
-  <img src="https://img.shields.io/badge/C%23-8.0-blue" alt="csharp" style="max-width:100%;"> 
-  <img src="https://img.shields.io/badge/IDE-vs2019-blue" alt="ide" style="max-width:100%;">
-</p>
-
-<p align="center">
   All-around Discord bot written in C# using Discord.NET.
 </p>
 
