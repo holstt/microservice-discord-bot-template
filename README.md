@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100" src="https://www.pngkey.com/png/full/17-179750_discord-icon-discord-logo.png">
+  <img width="200" src="https://e7.pngegg.com/pngimages/842/992/png-clipart-discord-computer-servers-teamspeak-discord-icon-video-game-smiley.png">
 </p>
 
 # Discord Bot
