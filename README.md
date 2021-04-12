@@ -1,4 +1,4 @@
-# Discord Bot
+# Discord Bot <img src="https://www.vhv.rs/dpng/d/445-4459297_discord-logo-computer-icons-reddit-transparent-background-discord.png" alt="Alt text" width="50">
 ![discord-net](https://img.shields.io/badge/discord--net-v2.2.0-blue)
 ![csharp](https://img.shields.io/badge/C%23-8.0-blue)
 ![ide](https://img.shields.io/badge/IDE-vs2019-blue)
