@@ -46,17 +46,36 @@ It is possible to run the application independently of the other services in the
 
 ### Configuration
 
+Please see the `appsettings.Example.json` file for an example of the required configuration values. Rename the file to `appsettings.Production.json`. If you wish to develop on the bot, create a copy named `appsettings.Development.json` .
+
+
 #### Bot
 
 I will recommend to create two bots on Discord - one for development and one for production. The development bot should only have access to discord servers created for testing.
 
-Place the production bot token in `appsettings.Production.json` and the development bot token in `appsettings.Development.json`
+Place the production bot token in `appsettings.Production.json` and the development bot token in `appsettings.Development.json`:
 
-#### Other
+```JSONC
+"Discord": {
+    "BotToken": "YOUR_BOT_TOKEN"
+}
+```
 
-Change the logging configuration defined in `appsettings.json` if necessary.  
+#### Database
+
+The bot uses a local SQLite database for development. You should use a database server for production such as PostgreSQL. Insert the connection string for the production database in `appsettings.Production.json`.
+
+```JSONC
+"DbConnectionString": "YOUR_CONNECTION_STRING"
+```
+
+#### Logging
+
+The project uses [Serilog](https://github.com/serilog/serilog) for logging. Change the logging configuration defined in `appsettings.json` or you can leave it as is. 
 
 ### Running the bot
+
+> :warning: Remember to set up configuration first!
 
 Either run the project natively or use the provided `docker-compose.yml` to run it in Docker using the Docker Compose tool.
 
