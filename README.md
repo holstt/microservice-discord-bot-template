@@ -16,7 +16,7 @@
 
 ## About
 
-The Discord bot is part of a [microservice architecture](https://github.com/roedebaron/discordbot-microservice-architecture) managed by Docker Compose and depends on multiple other services in order to execute its' functionality - please see my other projects: 
+The discord bot is part of a [microservice architecture](https://github.com/roedebaron/discordbot-microservice-architecture) managed by Docker Compose and acts like a template for which it is possible to integrate multiple other services. Please see my other projects: 
 
 - [image-caption-ai](https://github.com/roedebaron/image-caption-ai)
 - [aau-schedule-scraping](https://github.com/roedebaron/aau-schedule-scraping)
@@ -83,7 +83,7 @@ Clone the project:
 1. `git clone https://github.com/roedebaron/discord-bot.git`
 2. `cd discord-bot/DiscordBot.Api`
 
-#### Native
+#### Running from source
 
 First, set up a postgres database for your platform. Then run the following commands: 
 
@@ -91,7 +91,7 @@ First, set up a postgres database for your platform. Then run the following comm
 4. Run `dotnet run`. This will automatically download all dependencies, build the project and then run the service.  
 5. If no other port has been specified in the configuration, the service is now running on port 5000. 
 
-#### Using Docker 🐳
+#### Running with Docker Compose 🐳
 3. Run `docker-compose up` to build the images and run the containers in attached mode
 4. If no other port has been specified in the configuration, the service is now running on port 5000. 
 
