@@ -5,13 +5,14 @@
 <h1 align="center">Discord Bot</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/discord--net-v2.2.0-blue" alt="discord-net" style="max-width:100%;">
-  <img src="https://img.shields.io/badge/C%23-8.0-blue" alt="csharp" style="max-width:100%;"> 
+  <img src="https://img.shields.io/badge/discord--net-v2.3.1-blue" alt="discord-net" style="max-width:100%;">
+  <img src="https://img.shields.io/badge/C%23-9.0-blue" alt="csharp" style="max-width:100%;"> 
+    <img src="https://img.shields.io/badge/.NET-5.0-blue" alt="csharp" style="max-width:100%;"> 
   <img src="https://img.shields.io/badge/IDE-vs2019-blue" alt="ide" style="max-width:100%;">
 </p>
 
 <p align="center">
-  All-around Discord bot written in C# using Discord.NET.
+  Discord bot template written in C# using Discord.NET.
 </p>
 
 ## About
@@ -73,6 +74,12 @@ The bot uses a local SQLite database for development. You should use a database 
 
 The project uses [Serilog](https://github.com/serilog/serilog) for logging. Change the logging configuration defined in `appsettings.json` or you can leave it as is. 
 
+It is possible to log using Elastic Stack (Elastic Search, Kibnana and Beats) - dockerfiles are included. 
+
+#### Dashboard
+
+Currently, a dashboard for the Discord bot is available in Kibana as a custom dashboard that reads log messages from the bot and display useful statistics. 
+
 ### Running the bot
 
 > :warning: Remember to set up configuration first!
@@ -100,7 +107,6 @@ First, set up a postgres database for your platform. Then run the following comm
 > - Setting own config/env values.
 > - Link to other project dependencies. 
 > - Link to docker-compose.yml 
-> - Native + Docker command
  
 
 ## Usage 
@@ -111,10 +117,11 @@ First, set up a postgres database for your platform. Then run the following comm
 > - Insert screenshot, demo gif, code examples... 
 
 ## Project TODO
+- [x] Migrate to latest Discord.NET package
+- [x] Migrate to .NET 5/C#9
 - [ ] Push code to repo
 - [ ] Refactor
-- [ ] Migrate to latest Discord.NET package
-- [ ] Migrate to .NET 5/C#9
+
 
 
 
