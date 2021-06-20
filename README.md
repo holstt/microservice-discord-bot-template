@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100" src="https://southportlandlibrary.com/wp-content/uploads/2020/11/discord-logo-1024x1024.jpg">  
+  <img width="100" src="https://pnggrid.com/wp-content/uploads/2021/05/Discord-Logo-Circle-768x768.png">  
 </p>
 
 <h1 align="center">Discord Bot</h1>
