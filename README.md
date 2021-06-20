@@ -16,8 +16,12 @@
 </p>
 
 ## About
+ 
+To obtain a seperation of concerns, it is tempting to seperate different functionality into multiple discord bots. This projects acts as a template that allows to easely integrate multiple different bots into one, making it possible to share common behavior such as messaging, logging etc. 
 
-The discord bot is part of a [microservice architecture](https://github.com/roedebaron/discordbot-microservice-architecture) managed by Docker Compose and acts like a template for which it is possible to integrate multiple other services. Please see my other projects: 
+The idea is to define the commands, business logic, dependencies etc. for each bot in its' own project. Integrating the bot into the template only requires registering the bot's assembly in the configuration file of the template and provide a way for the template to register the bot's dependencies into the service container.
+
+This template is used by my other discord bot projects: 
 
 - [image-caption-ai](https://github.com/roedebaron/image-caption-ai)
 - [aau-schedule-scraping](https://github.com/roedebaron/aau-schedule-scraping)
@@ -47,10 +51,10 @@ It is possible to run the application independently of the other services in the
 
 ### Configuration
 
-Please see the `appsettings.Example.json` file for an example of the required configuration values. Rename the file to `appsettings.Production.json`. If you wish to develop on the bot, create a copy named `appsettings.Development.json` .
+Please see the `appsettings.Example.json` file for an example of the required configuration values. Rename the file to `appsettings.Production.json`. If you wish to develop on the bot, create a copy named `appsettings.Development.json`. 
 
 
-#### Bot
+#### Bot Token
 
 I will recommend to create two bots on Discord - one for development and one for production. The development bot should only have access to discord servers created for testing.
 
@@ -61,6 +65,17 @@ Place the production bot token in `appsettings.Production.json` and the developm
     "BotToken": "YOUR_BOT_TOKEN"
 }
 ```
+
+#### Bot Integration
+
+Add the absolute or relative assembly path of all bots you wish to integrate with the template bot in the configuration file.
+
+```JSONC
+"AssemblyPaths": [
+    "..\\..\\MyDiscordBotProject\\MyDiscordBot\\bin\\Debug\\net5.0\\BotExtensions.dll" // Example on relative path
+]
+```
+
 
 #### Database
 
@@ -84,7 +99,7 @@ Currently, a dashboard for the Discord bot is available in Kibana as a custom da
 
 > :warning: Remember to set up configuration first!
 
-Either run the project natively or use the provided `docker-compose.yml` to run it in Docker using the Docker Compose tool.
+Either run the project from source or use the provided `docker-compose.yml` to run it in Docker using the Docker Compose tool.
 
 Clone the project: 
 1. `git clone https://github.com/roedebaron/discord-bot.git`
@@ -99,7 +114,7 @@ First, set up a postgres database for your platform. Then run the following comm
 5. If no other port has been specified in the configuration, the service is now running on port 5000. 
 
 #### Running with Docker Compose 🐳
-3. Run `docker-compose up` to build the images and run the containers in attached mode
+3. Run `docker-compose up` to build the images and run the containers in attached mode.
 4. If no other port has been specified in the configuration, the service is now running on port 5000. 
 
 
