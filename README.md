@@ -5,10 +5,10 @@
 <h1 align="center">Discord Bot</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/discord--net-v2.3.1-blue" alt="discord-net" style="max-width:100%;">
+  <img src="https://img.shields.io/badge/discord--net-v2.4.0-blue" alt="discord-net" style="max-width:100%;">
   <img src="https://img.shields.io/badge/C%23-9.0-blue" alt="csharp" style="max-width:100%;"> 
     <img src="https://img.shields.io/badge/.NET-5.0-blue" alt="csharp" style="max-width:100%;"> 
-  <img src="https://img.shields.io/badge/IDE-vs2019-blue" alt="ide" style="max-width:100%;">
+  <img src="https://img.shields.io/badge/IDE-VS2019-purple" alt="ide" style="max-width:100%;">
 </p>
 
 <p align="center">
