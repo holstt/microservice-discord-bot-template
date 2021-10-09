@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  Discord bot template that makes it possible to run multiple different Discord bots under a single bot. Written in C# using Discord.NET.
+  Discord bot template that makes it possible to run multiple different Discord bots under a single bot in a Docker based microservice architecture managed by Docker Compose. Written in C# using Discord.NET.
 </p>
 
 ## About
@@ -35,6 +35,9 @@ This template is used by my other discord bot projects:
 - A global `!help` command that auto-generates a message giving an overview of all command categories (command modules with a `Group` and a `Summary` attribute)
 - Auto-generated help messages for all command categories. Is called using `!help <command_category`
 - Possible to override the auto-generated help message for a specific command category by decorating the custom help command with a `Priority` of 1 or higher.
+- Audio player that dynamically loads and play all audio files placed in a given internal folder for each bot
+- Sending status updates in a specified guild only for the developer e.g. a message with bot name and version number at at startup of each bot. 
+- 
 
 
 ## Getting Started
