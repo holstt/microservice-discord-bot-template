@@ -32,12 +32,38 @@ This template is used by my other discord bot projects:
 - [chart-service](https://github.com/roedebaron/chart-service)
 
 ## Features
-- A global `!help` command that auto-generates a message giving an overview of all command categories (command modules with a `Group` and a `Summary` attribute)
-- Auto-generated help messages for all command categories. Is called using `!help <command_category`
-- Possible to override the auto-generated help message for a specific command category by decorating the custom help command with a `Priority` of 1 or higher.
+- A global `!help` command that auto-generates a message giving an overview of all command categories.
+- Auto-generated help messages for all command categories. Simply call `!help <command_category`.
 - Audio player that dynamically loads and play all audio files placed in a given internal folder for each bot
-- Sending status updates in a specified guild only for the developer e.g. a message with bot name and version number at at startup of each bot. 
-- 
+- Sending status updates in a specified guild only for the developer e.g. a message with bot name and version number at startup of each bot. 
+
+
+### Feature: Global help command
+
+A command category is only included if the command module class is decorated with the `Group` and `Summary` attributes. 
+`Group` should specify the category name. `Summary` should give a description of the category. As such, a category can be excluded from the overview e.g. by not decorating it with a `Summary` attribute. 
+
+--INSERT EXAMPLE IMAGE HERE
+
+### Feature: Auto-generated help command for command categories
+
+A help command is only provided for the command categories which are decorated with the `Summary` attribute.
+
+If the command module is decorated with the `Alias` attribute, the aliases will be included in the top of the help message together with the default command name.
+If the command module is decorated with the `Remarks` attribute, the content will be included in the top of the help message after aliases. 
+
+The full command call specification will be displayed with parameters in *snake_case*   
+The content of the `Summary` attribute for each command should give a description of the command. The description is included just below the command call specification.
+If the command module is decorated with the `Remarks` attribute, the content will be included after the command description. 
+
+
+However, customization of the auto-generated message is possible - see below.
+
+This behaviour can be overridden for a specific command category by decorating your own custom help command with a `Priority` attribute of 1 or higher. 
+
+--INSERT EXAMPLE IMAGE HERE
+
+
 
 
 ## Getting Started
