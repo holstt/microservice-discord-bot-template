@@ -77,11 +77,11 @@ The internal architecture is based on the MVC-pattern following the principles f
 
 A brief overview of the layers: 
 
-**Model/Core**: Business logic. Represents domain objects and services. 
+**Core (Model)**: Business logic. Represents domain objects and services. 
 
-**View (Messages)**: Represents the Discord messages to be returned to a Discord guild i.e. a "View" is simply a formatted string to be interpreted by the Discord UI client. 
+**Messages (View)**: Represents the Discord messages to be returned to a Discord guild i.e. a "View" is simply a formatted string to be interpreted by the Discord UI client. 
 
-**Controller (Commands)**: Recieves incoming Discord commands which are then delegated to **Core**. The result from Core is represented as a Discord message (a View) and returned to the client.  
+**Commands (Controller)**: Recieves incoming Discord commands which are then delegated to **Core**. The result from Core is represented as a Discord message (a View) and returned to the client.  
 
 **Infrastructure**: Data persistence and external web services. 
 
