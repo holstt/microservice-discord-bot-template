@@ -35,7 +35,8 @@ This template is used by my other discord bot projects:
 - A global `!help` command that auto-generates a message giving an overview of all command categories.
 - Auto-generated help messages for all command categories. Simply call `!help <command_category`.
 - Audio player that dynamically loads and play all audio files placed in a given internal folder for each bot
-- Sending status updates in a specified guild only for the developer e.g. a message with bot name and version number at startup of each bot. 
+- Sending status updates in a specified guild only for the developer e.g. a message with bot name and version number at startup of each bot. ,
+- Registration and identification of all services in the microservice architecture. This ensures only a single bot answers the global `!help` command.
 
 
 ### Feature: Global help command
@@ -47,14 +48,16 @@ A command category is only included in the global help command, if the command m
 
 ### Feature: Auto-generated help command for command categories
 
-A help command is only provided if the command module class representing the category is decorated with the `Group` and `Summary` attributes.
+Required:
+- A help message for all commands in a category is only provided if the command module class representing the category is decorated with the `Group` and `Summary` attributes.
+- A command is only included in the help message if it is decorated with the `Summary` attribute. The content of the `Summary` attribute for each command should give a description of the command. The description is included just below the command call specification.
 
-If the command module is decorated with the `Alias` attribute, the aliases will be included in the top of the help message together with the default command name.
-If the command module is decorated with the `Remarks` attribute, the content will be included in the top of the help message after aliases. 
+Optional:
+- If the command module is decorated with the `Alias` attribute, the aliases will be included in the top of the help message together with the default command name.
+- If the command module is decorated with the `Remarks` attribute, the content will be included in the top of the help message after aliases. 
+- The full command call specification will be displayed with parameters in *snake_case*
+- If a command is decorated with the `Remarks` attribute, the content will be included after the command description. 
 
-The full command call specification will be displayed with parameters in *snake_case*   
-The content of the `Summary` attribute for each command should give a description of the command. The description is included just below the command call specification.
-If the command module is decorated with the `Remarks` attribute, the content will be included after the command description. 
 
 The commands will appear in the help message following the order they are declared in the command module class. 
 
