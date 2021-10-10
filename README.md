@@ -56,10 +56,9 @@ The full command call specification will be displayed with parameters in *snake_
 The content of the `Summary` attribute for each command should give a description of the command. The description is included just below the command call specification.
 If the command module is decorated with the `Remarks` attribute, the content will be included after the command description. 
 
+The commands will appear in the help message following the order they are declared in the command module class. 
 
-However, customization of the auto-generated message is possible - see below.
-
-This behaviour can be overridden for a specific command category by decorating your own custom help command with a `Priority` attribute of 1 or higher. 
+All this behaviour can be overridden for a specific command category by decorating your own custom help command with a `Priority` attribute of 1 or higher. 
 
 --INSERT EXAMPLE IMAGE HERE
 
