@@ -37,6 +37,7 @@ This template is used by my other discord bot projects:
 - Audio player that dynamically loads and play all audio files placed in a given internal folder for each bot
 - Sending status updates in a specified guild only for the developer e.g. a message with bot name and version number at startup of each bot. ,
 - Registration and identification of all services in the microservice architecture. This ensures only a single bot answers the global `!help` command.
+- Docker and Docker Swarm commands for Developer that provides and overview of the services and VM's in the microservice arhitecture.
 
 
 ### Feature: Global help command
