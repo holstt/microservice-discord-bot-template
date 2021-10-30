@@ -34,7 +34,7 @@ This template is used by my other discord bot projects:
 ## Features
 - A global `!help` command that auto-generates a message giving an overview of all command categories.
 - Auto-generated help messages for all command categories. Simply call `!help <command_category`.
-- Audio player that dynamically loads and play all audio files placed in a given internal folder for each bot
+- Audio player with search functionality that dynamically loads and play audio files placed in a given internal folder for each bot.
 - Sending status updates in a specified guild only for the developer e.g. a message with bot name and version number at startup of each bot. ,
 - Registration and identification of all services in the microservice architecture. This ensures only a single bot answers the global `!help` command.
 - Docker and Docker Swarm commands for Developer that provides and overview of the services and VM's in the microservice arhitecture.
@@ -47,7 +47,7 @@ A command category is only included in the global help command, if the command m
 
 --INSERT EXAMPLE IMAGE HERE
 
-### Feature: Auto-generated help command for command categories
+### Feature: Auto-generated help command for each command category
 
 Required:
 - A help message for all commands in a category is only provided if the command module class representing the category is decorated with the `Group` and `Summary` attributes.
@@ -56,7 +56,7 @@ Required:
 Optional:
 - If the command module is decorated with the `Alias` attribute, the aliases will be included in the top of the help message together with the default command name.
 - If the command module is decorated with the `Remarks` attribute, the content will be included in the top of the help message after aliases. 
-- The full command call specification will be displayed with parameters in *snake_case*
+- The command call specification will be displayed with command parameters in *snake_case*. This can be overriden by a custom parameter specification by decorating the individual command with a `Summary` attribute containing the custom parameter text.
 - If a command is decorated with the `Remarks` attribute, the content will be included after the command description. 
 
 
@@ -64,8 +64,14 @@ The commands will appear in the help message following the order they are declar
 
 All this behaviour can be overridden for a specific command category by decorating your own custom help command with a `Priority` attribute of 1 or higher. 
 
---INSERT EXAMPLE IMAGE HERE
+--INSERT EXAMPLE IMAGES HERE
 
+### Feature: Audioplayer with search funtionality
+- Simply specify the name of the folder that contains audio when configuring the bot. Audio can now be played using the `AudioCient` as a dependency in a command module.
+- Use the XXX method to get the audio file that best matches the requested audio name according to the order: 'exact match', 'starts with' and 'contains'.
+- Optimized by using an internal cache of sounds available in order to minimize I/O. It is possible to request a cache update if new sounds are added on runtime. Simply call `GetAvailableAudioNames` with the optional parameter `updateCache` set to `true`.
+
+--LINK TO EXAMPLE PROJECT ON HOW TO USE--
 
 
 
