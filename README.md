@@ -37,8 +37,11 @@ This template is used by my other discord bot projects:
 - Audio player with search functionality that dynamically loads and play audio files placed in a given internal folder for each bot.
 - Sending status updates in a specified guild only for the developer e.g. a message with bot name and version number at startup of each bot. ,
 - Registration and identification of all services in the microservice architecture. This ensures only a single bot answers the global `!help` command.
-- Docker and Docker Swarm commands for Developer that provides and overview of the services and VM's in the microservice arhitecture.
+- Docker and Docker Swarm commands for the Developer that provides an overview of the docker containers and VM's running in the microservice arhitecture.
 - Disposing of services according to their specified scopes after command has been executed (...as they should, but apparently Discord.NET is not doing this for you ATM)
+- Automatic deletion of command and bot messages after a custom default time period.
+- Set custom command prefix for every guild and what it should default to for new guilds.
+- Database integration that can be extended with custom entities. 
 
 
 ### Feature: Global help command
@@ -74,6 +77,8 @@ All this behaviour can be overridden for a specific command category by decorati
 
 --LINK TO EXAMPLE PROJECT ON HOW TO USE--
 
+### Feature: Automatic deletion of messages
+It is possibly to specify a default delay for when messages should be deleted. This feature applies to both the command messages issued by the user and the replies issued by the bot. Futhermore, it is also possible to override the default and specify a custom deletion delay for each individual reply if desired. Of course, replies can also be persistent.   
 
 
 ## Getting Started
