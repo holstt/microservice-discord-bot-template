@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/discord--net--labs-v3.1.7-blue" alt="discord-net" style="max-width:100%;">
   <img src="https://img.shields.io/badge/C%23-8.0-blue" alt="csharp" style="max-width:100%;"> 
-    <img src="https://img.shields.io/badge/.NET Core-3.1-blue" alt="csharp" style="max-width:100%;"> 
+  <img src="https://img.shields.io/badge/.NET Core-3.1-blue" alt="csharp" style="max-width:100%;"> 
   <img src="https://img.shields.io/badge/IDE-VS2019-purple" alt="ide" style="max-width:100%;">
 </p>
 
@@ -183,7 +183,7 @@ First, set up a postgres database for your platform. Then run the following comm
 
 ## Project TODO
 - [x] Migrate to latest Discord.NET package
-- [x] Migrate to .NET 5/C#9
+- [ ] Migrate to .NET 6/C#10
 - [ ] Push code to repo
 - [ ] Refactor
 
