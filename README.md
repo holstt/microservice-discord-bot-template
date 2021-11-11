@@ -39,7 +39,7 @@ This template is used by my other discord bot projects:
 - Registration and identification of all services in the microservice architecture. This ensures only a single bot answers the global `!help` command.
 - Docker and Docker Swarm commands for the Developer that provides an overview of the docker containers and VM's running in the microservice arhitecture.
 - Disposing of services according to their specified scopes after command has been executed (...as they should, but apparently Discord.NET is not doing this for you ATM)
-- Automatic deletion of command and bot messages after a custom default time period.
+- Auto-delete command and bot messages after a default time period.
 - Set custom command prefix for every guild and what it should default to for new guilds.
 - Database integration that can be extended with custom entities. 
 
