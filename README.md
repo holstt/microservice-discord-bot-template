@@ -17,7 +17,7 @@
 
 ## About
  
-To obtain a seperation of concerns, it is tempting to seperate different functionality into multiple different Discord bots in a microservice architecture. This projects acts as a template/library that allows to easely share common implementation, such as messaging, configuration, audio playing, help commands etc., between multiple different bots and at the same time make the bots appear as a single bot in the Discord UI client. In this way, it is not neccessary to add all the different bots to a guild, as only one bot need to be added. 
+To obtain a seperation of concerns, it is tempting to seperate different functionality into multiple different Discord bots in a microservice architecture. This projects acts as a template/library that allows to easely share common implementation, such as messaging, configuration, audio playing, help commands etc., between multiple different bots and at the same time make the bots appear as a single bot in the Discord UI client. As such, only one Discord bot needs to be added to a guild rather than a bot for each microservice. 
 
 To summarize, the template bot make it possible to: 
 - Share common Discord bot functionality between multiple bots 
@@ -34,13 +34,13 @@ This template is used by my other discord bot projects:
 ## Features
 - A global `!help` command that auto-generates a message giving an overview of all command categories.
 - Auto-generated help messages for all command categories. Simply call `!help <command_category`.
-- Audio player with search functionality that dynamically loads and play audio files placed in a given internal folder for each bot.
-- Sending status updates in a specified guild only for the developer e.g. a message with bot name and version number at startup of each bot. ,
-- Registration and identification of all services in the microservice architecture. This ensures only a single bot answers the global `!help` command.
+- Audio player with search functionality that dynamically loads all audio files placed in a specified folder for each bot.
+- Get status nofications for each bot by configuring a developer guild. 
+- Registration and identification of all bots running in the microservice architecture. This ensures only a single bot answers the global `!help` command.
 - Docker and Docker Swarm commands for the Developer that provides an overview of the docker containers and VM's running in the microservice arhitecture.
 - Disposing of services according to their specified scopes after command has been executed (...as they should, but apparently Discord.NET is not doing this for you ATM)
-- Auto-delete command and bot messages after a default time period.
-- Set custom command prefix for every guild and what it should default to for new guilds.
+- Auto-delete of user commands and bot replies after a default time period.
+- Set default and custom command prefix for every guild.
 - Database integration that can be extended with custom entities. 
 
 
