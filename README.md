@@ -1,3 +1,11 @@
+
+> :warning: Currently, this repo serves as documentation. Code will follow eventually :-) 
+
+## Project TODO
+- [ ] Clean up code and migrate to slash commands -> Reevaluate current architecture (no need for help cmd?)
+- [ ] Move to (this) public repo
+
+
 <p align="center">
   <img width="100" src="https://pnggrid.com/wp-content/uploads/2021/05/Discord-Logo-Circle-768x768.png">  
 </p>
@@ -103,7 +111,6 @@ A brief overview of the layers:
 
 > TODO: 
 > - Insert architecture illustration.
-> - Update to new arhitecture
 
 ## Getting Started
 
@@ -168,24 +175,12 @@ First, set up a postgres database for your platform. Then run the following comm
 4. If no other port has been specified in the configuration, the service is now running on port 5000. 
 
 
-> TODO: 
-> - Setting own config/env values.
-> - Link to other project dependencies. 
-> - Link to docker-compose.yml 
- 
-
 ## Usage 
 
-> TODO:
+> Usage section TODO:
 > - Overview of all commands with link to example section
-> - Example of all commands
-> - Insert screenshot, demo gif, code examples... 
-
-## Project TODO
-- [x] Migrate to latest Discord.NET package
-- [ ] Migrate to .NET 6/C#10
-- [ ] Push code to repo
-- [ ] Refactor
+> - Example section with commands
+> - Insert screenshot, demo gif, code examples etc.
 
 
 
